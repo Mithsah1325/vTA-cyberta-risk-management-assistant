@@ -38,9 +38,9 @@ As part of the evaluation, we are analyzing the chatbot's effectiveness through 
 The chatbot is currently deployed and accessible at: [VTA Chatbot](https://vta-brown.vercel.app)
 
 ## Contributors
+- Mith Sah
 - Gaurab Baral
 - Sushant Shrestha
-- Mith Sah
 
 ## References
 - [CoVerifi: A COVID-19 news verification system - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2468696421000070)
