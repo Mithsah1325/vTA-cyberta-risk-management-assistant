@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getOpenAIClient, getPineconeClient } from '../config';
 import { connectToDatabase } from '../config';
 import { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
+import { Collection } from 'mongodb';
 
 
 type Message = ChatCompletionMessageParam;
@@ -77,7 +78,7 @@ export async function POST(req: NextRequest) {
 
     console.log("Selected Option:", selectedOption);
 
-    let chatCollection: ReturnType<Awaited<ReturnType<typeof connectToDatabase>>['collection']> | null = null;
+    let chatCollection: Collection<ChatInteraction> | null = null;
     try {
       const db = await connectToDatabase();
       chatCollection = db.collection<ChatInteraction>('pilot');
