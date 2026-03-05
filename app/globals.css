@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #1a202c;
+  --foreground: #e8eef9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a202c;
+    --foreground: #e8eef9;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  background-image:
+    linear-gradient(rgba(143, 162, 199, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(143, 162, 199, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-academic {
+  font-family: var(--font-merriweather), ui-serif, Georgia, serif;
+}
